@@ -227,8 +227,8 @@ p{
    content: url('image2/highlight.svg');
    width: 4px;
    width: 4px;
-    height:100%;
-    margin-right:12px;
+   height:100%;
+   margin-right:12px;
 }
 
 .layout__page-content{
@@ -253,13 +253,6 @@ p{
     flex-wrap: nowrap;
     gap: 16px;
 }
-.layout__services__subtitle{
-    display: none; 
-}
-.page-conten__subtitle__decktop{
-    display: none;
-
-}
 
 @media screen and (min-width: 784px) {
     .services__user-menu{
@@ -276,7 +269,6 @@ p{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        /* gap: 16px; */
     }
 
     .services__services-menu::after{
@@ -335,6 +327,7 @@ p{
         flex-wrap: nowrap;
         flex-direction: row-reverse;
         justify-content: space-between;
+        position: relative;
     }
 
     .container_about{
@@ -344,7 +337,11 @@ p{
     }
 
     .page-conten__subtitle{
-        display: none;
+        display: block;
+        position: absolute;
+        top:0px;
+        bottom: 0;
+        margin-top: 42px;
     }
 
     .page-conten__subtitle__decktop,
